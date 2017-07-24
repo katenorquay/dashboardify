@@ -1,3 +1,4 @@
+
 function getButton() {
     var nextBtn = document.getElementsByClassName("nextBtn")
     console.log('hello')
@@ -8,21 +9,16 @@ function getButton() {
      }, 15000);
     }
 
-
-
-
 function addEventListener(nextBtn) {
   console.log('the button', nextBtn)
   nextBtn[0].addEventListener('click', callSetTimeOut);
 }
 
-  var time = 20000
-
-  function callSetTimeOut() {
-    setTimeout(function(){
-      alert("Hello");
-   }, 3000);
-  }
+function callSetTimeOut() {
+  setTimeout(function(){
+    alert("Hello");
+  }, 3000);
+}
 }
 
 
